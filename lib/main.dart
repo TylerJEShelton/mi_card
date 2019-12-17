@@ -11,38 +11,19 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          child: Column(
             children: <Widget>[
-              Container(
-                height: 100.0,
-                width: 100.0,
-                color: Colors.red,
-                child: Text('Container 1'),
+              CircleAvatar(
+                radius: 50.0,
+                backgroundImage: AssetImage('images/headshot.jpg'),
               ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Container(
-                    height: 100.0,
-                    width: 100.0,
-                    color: Colors.yellow,
-                    child: Text('Container 2'),
-                  ),
-                  Container(
-                    height: 100.0,
-                    width: 100.0,
-                    color: Colors.green,
-                    child: Text('Container 3'),
-                  ),
-                ],
-              ),
-              Container(
-                height: 100.0,
-                width: 100.0,
-                color: Colors.blue,
-                child: Text('Container 4'),
+              Text(
+                'Tyler Shelton',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 40.0,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ],
           ),
