@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.blue[600],
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 50.0,
@@ -36,100 +37,79 @@ class MyApp extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     letterSpacing: 2.5),
               ),
-              Container(
-                color: Colors.white,
-                padding: EdgeInsets.all(10.0),
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.phone,
-                      color: Colors.blue[600],
-                    ),
-                    SizedBox(
-                      width: 14.0,
-                    ),
-                    Text(
-                      '289-983-8899',
-                      style: TextStyle(
-                        color: Colors.blue[900],
-                        fontFamily: 'SoucreSansPro',
-                        fontSize: 20.0,
-                      ),
-                    )
-                  ],
+              SizedBox(
+                height: 20.0,
+                width: 200.0,
+                child: Divider(
+                  color: Colors.blue[100],
                 ),
               ),
-              Container(
-                color: Colors.white,
-                padding: EdgeInsets.all(10.0),
+              Card(
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.email,
-                      color: Colors.blue[600],
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.blue[600],
+                  ),
+                  title: Text(
+                    '289-983-8899',
+                    style: TextStyle(
+                      color: Colors.blue[900],
+                      fontFamily: 'SourceSansPro',
+                      fontSize: 20.0,
                     ),
-                    SizedBox(
-                      width: 14.0,
-                    ),
-                    Text(
-                      'bullfrogdevstudio@gmail.com',
-                      style: TextStyle(
-                        color: Colors.blue[900],
-                        fontFamily: 'SoucreSansPro',
-                        fontSize: 20.0,
-                      ),
-                    )
-                  ],
+                  ),
                 ),
               ),
-              Container(
-                color: Colors.white,
-                padding: EdgeInsets.all(10.0),
+              Card(
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      MaterialCommunityIcons.web,
-                      color: Colors.blue[600],
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.blue[600],
+                  ),
+                  title: Text(
+                    'bullfrogdevstudio@gmail.com',
+                    style: TextStyle(
+                      color: Colors.blue[900],
+                      fontFamily: 'SourceSansPro',
+                      fontSize: 20.0,
                     ),
-                    SizedBox(
-                      width: 14.0,
-                    ),
-                    Text(
-                      'bullfrogdevstudio.com',
-                      style: TextStyle(
-                        color: Colors.blue[900],
-                        fontFamily: 'SoucreSansPro',
-                        fontSize: 20.0,
-                      ),
-                    )
-                  ],
+                  ),
                 ),
               ),
-              Container(
-                color: Colors.white,
-                padding: EdgeInsets.all(10.0),
+              Card(
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Octicons.mark_github,
-                      color: Colors.blue[600],
+                child: ListTile(
+                  leading: Icon(
+                    MaterialCommunityIcons.web,
+                    color: Colors.blue[600],
+                  ),
+                  title: Text(
+                    'bullfrogdevstudio.com',
+                    style: TextStyle(
+                      color: Colors.blue[900],
+                      fontFamily: 'SourceSansPro',
+                      fontSize: 20.0,
                     ),
-                    SizedBox(
-                      width: 14.0,
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Octicons.mark_github,
+                    color: Colors.blue[600],
+                  ),
+                  title: Text(
+                    'github.com/bullfrogdevstudio',
+                    style: TextStyle(
+                      color: Colors.blue[900],
+                      fontFamily: 'SourceSansPro',
+                      fontSize: 20.0,
                     ),
-                    Text(
-                      'github.com/bullfrogdevstudio',
-                      style: TextStyle(
-                        color: Colors.blue[900],
-                        fontFamily: 'SoucreSansPro',
-                        fontSize: 20.0,
-                      ),
-                    )
-                  ],
+                  ),
                 ),
               ),
             ],
